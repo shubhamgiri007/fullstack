@@ -1,0 +1,19 @@
+{
+  "name": "idea-board-app",
+  "version": "1.0.0",
+  "description": "A two-part web application with marketing landing page and real-time idea board",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:frontend\" \"npm run dev:backend\"",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev:backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd frontend && npm start",
+    "install:all": "npm install && cd frontend && npm install && cd ../backend && npm install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": ["react", "nextjs", "nodejs", "express", "postgresql", "docker"],
+  "author": "Assessment Project",
+  "license": "MIT"
+}
